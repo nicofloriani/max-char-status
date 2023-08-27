@@ -33,6 +33,9 @@ export default function App() {
               Tell the world!
             </button>
           </form>
+          <p className={message.length > 60 && "over-limit"}>
+            {message.length} / {maxLength}
+          </p>
         </div>
       )}
     </div>
